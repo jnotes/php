@@ -40,3 +40,4 @@
 * [Web Service](README.md)
 * [Ajax](README.md)
 * [扩展开发](README.md)
+* [语法规范](README.md)

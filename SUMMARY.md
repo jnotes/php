@@ -39,5 +39,6 @@
 * [XML-RPC、SOAP](soap.md)
 * [Web Service](web_service.md)
 * [Ajax](ajax.md)
+* [.htaccess](htaccess.md)
 * [扩展开发](extended.md)
 * [语法规范](standard.md)

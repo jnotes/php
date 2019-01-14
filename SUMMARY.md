@@ -14,6 +14,7 @@
 * [数据类型](type.md)
 * [函数处理](function.md)
 * [面向对象](object.md)
+* [Trait](trait.md)
 * [文件系统](file.md)
 * [字符串处理](string.md)
 * [数组](array.md)

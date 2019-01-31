@@ -60,8 +60,44 @@
 
 ### `strstr`
 
+字符串查找操作，在PHP中使用`strstr`和`stristr`函数进行字符串查找操作。`string strstr(string str,string search)`,这里的，`str`是要进行查找的字符串，`search`是要查找的内容。这个函数返回找到的第一个全匹配的位置以后的全部内容。`strstr`是大小写敏感的，`stristr`是大小写不敏感的。
+
 ### `strlen`
+
+获取字符串长度，`int strlen(string str)`
 
 ### `substr`
 
+获取子字符串，在实际应用中，通常需要截取某一段字符串，`substr`函数用来截取一部分字符串，其语法格式是`string substr(string str,int start [, int length])`，这里的`str`是要进行截取的字符串，`start`是开始字符位置，`length`是要截取的长度，如果不指定`length`，则默认为截取到字符串未尾。
+
 ## 正则表达式
+
+正则表达式是描述字符串集的字符串。例如，正则表达式`*PHP*`描述所有包含`PHP`并且前面或后面跟零个或多个字符的字符串。如：`PHPMyadmin`、`MyPHP`、`ZendPHPFramework`或`PHP`本身。`.`匹配任何字符，`+`类似`*`，但至少要一个字符，`[a-z]`指一个匹配范围，所以`[a-zA-Z_0-9]`匹配字母、数字、下划线，也可以将它写成`\w`。`\w+`匹配至少有一个字符的单词序列。例如，正则表达式`^[a-zA-Z_]\w*$`。专用字符`^`的意思是"以...开始"，`$`的意思是"结尾"。正则表达式在对输入进行有效性验证时非常有用。在`PHP`中正则表达式的函数规定表达式必须被包含在定界符中，如使用`/`作为定界符。
+
+### `preg_grep`
+
+`preg_grep`函数用来获得与模式匹配的数组单元。`array preg_grep(string pattern,array input)`,`pattern`是用来匹配的正则表达式，`input`是用来匹配的数组。需要注意的是`preg_grep`函数返回的结果使用从输入数组来的键名进行索引。
+
+### `preg_match_all`
+
+`preg_match_all`函数用来进行全局正则表达式的匹配，`int preg_match_all(string pattern,string input,array matches)`。`pattern`是用来匹配的正则表达式，`input`是用来匹配的字符串,`matches`是匹配结果的数组。
+
+### `preg_match`
+
+`preg_match`函数用来进行正则表达式匹配。与`preg_match_all`函数不同，`preg_match`函数在第一次匹配后将停止搜索。`int preg_match(string pattern,string input,array matches)`。`pattern`是用来匹配的正则表达式，`input`是用来匹配的字符串,`matches`是匹配结果的数组。
+
+### `preg_quote`
+
+`preg_quote`函数用来进行正则表达式的转义。`preg_quote`函数用于将字符串中所有具有正则表达式意义的字符进行转义。在实际应用中，如果需要用动态生成的字符串来作为正则表达式进行模式匹配，则可以用此函数转义其中可能包含的一些特殊字符。这些特殊字符包括：`.`,'\\','+','*','?','[]','^','$','()','{}','=','!','<>','|',':'等。 `string preg_quote(string str[, string delimiter])`。这里参数`str`是用来进行字符串转义的正则表达式，`delimiter`是其他需要转义的字符。
+
+### `preg_replace`
+
+`preg_replace`与前面的`preg_match`函数的使用方法类似，但是还是提供了字符串的替换功能，`preg_replace(pattern,replacement,subject [,int limit])`，参数`pattern`是进行匹配的正则表达式，`replacement`是要将匹配部分替换成的字符串或者正则表达式，`subject`是要被匹配的字符串，`limit`是要进行的匹配次数。
+
+### `preg_replace_callback`
+
+`preg_replace_callback`的用法几乎和`preg_replace`函数一样。但是，使用`preg_replace_callback`函数可以获得比`preg_replace`更完善的替换功能。`preg_replace`的替换只是基本的字符串间的计算，而`preg_replace_callback`函数可以将要替换的字符串传入到一个函数中进行处理，并将处理后的结果进行替换。`preg_replace_callback(pattern,callback,subject [,int limit])` 。参数`callback`是一个函数。
+
+### `preg_split`
+
+`preg_split`提供了用正则表达式分割字符串的功能，`array preg_split(string pattern,string subject [, int limit])`

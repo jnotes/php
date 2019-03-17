@@ -33,7 +33,6 @@
 * [FPDF](fpdf.md)
 * [XML](xml.md)
 * [Smarty](smarty.md)
-* [Jpgraph](jpgraph.md)
 * [LDAP](ldap.md)
 * [MAIL](mail.md)
 * [SSL](ssl.md)

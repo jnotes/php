@@ -1,0 +1,788 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>SSL · PHP学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="soap.html" />
+    
+    
+    <link rel="prev" href="mail.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="base/">
+            
+                <a href="base/">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="base/variable.html">
+            
+                <a href="base/variable.html">
+            
+                    
+                    常量与变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="base/keywords.html">
+            
+                <a href="base/keywords.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="base/process.html">
+            
+                <a href="base/process.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="base/expression.html">
+            
+                <a href="base/expression.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="base/global_variable.html">
+            
+                <a href="base/global_variable.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="base/file_include.html">
+            
+                <a href="base/file_include.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="base/output.html">
+            
+                <a href="base/output.html">
+            
+                    
+                    输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="base/heredoc.html">
+            
+                <a href="base/heredoc.html">
+            
+                    
+                    heredoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="trait.html">
+            
+                <a href="trait.html">
+            
+                    
+                    Trait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    程序调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    Session与Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="cache.html">
+            
+                <a href="cache.html">
+            
+                    
+                    缓存与静态化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="language.html">
+            
+                <a href="language.html">
+            
+                    
+                    多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http_client.html">
+            
+                <a href="http_client.html">
+            
+                    
+                    网络客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="pear.html">
+            
+                <a href="pear.html">
+            
+                    
+                    PEAR、PECL应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="accelerator.html">
+            
+                <a href="accelerator.html">
+            
+                    
+                    加速器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="gd.html">
+            
+                <a href="gd.html">
+            
+                    
+                    GD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="fpdf.html">
+            
+                <a href="fpdf.html">
+            
+                    
+                    FPDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="smarty.html">
+            
+                <a href="smarty.html">
+            
+                    
+                    Smarty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="ldap.html">
+            
+                <a href="ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="mail.html">
+            
+                <a href="mail.html">
+            
+                    
+                    MAIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.28" data-path="ssl.html">
+            
+                <a href="ssl.html">
+            
+                    
+                    SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="soap.html">
+            
+                <a href="soap.html">
+            
+                    
+                    XML-RPC、SOAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="web_service.html">
+            
+                <a href="web_service.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="htaccess.html">
+            
+                <a href="htaccess.html">
+            
+                    
+                    .htaccess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="extended.html">
+            
+                <a href="extended.html">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    语法规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >SSL</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ssl">SSL</h1>
+<p> &#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#xFF0C;&#x76EE;&#x524D;&#x6D41;&#x884C;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x5B89;&#x5168;&#x4F20;&#x8F93;&#x65B9;&#x5F0F;&#x662F;&#x4F7F;&#x7528;SSL&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x3002;SSL&#x662F;&#x5B89;&#x5168;&#x5957;&#x63A5;&#x5C42;&#x534F;&#x8BAE;Secure Sockets Layer&#x7684;&#x7F29;&#x5199;&#x662F;&#x7F51;&#x666F;&#x516C;&#x53F8;&#x63A8;&#x51FA;&#x7684;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Web&#x5E94;&#x7528;&#x7684;&#x5B89;&#x5168;&#x534F;&#x8BAE;&#x3002;SSL&#x534F;&#x8BAE;&#x901A;&#x8FC7;&#x4E00;&#x79CD;&#x67B6;&#x677E;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x534F;&#x8BAE;&#x5982;HTTP&#x3001;FTP&#x7B49;&#x4E4B;&#x4E0A;&#x7684;&#x5B89;&#x5168;&#x5C42;&#x4E0E;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x7684;TCP/IP&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x4E86;&#x6570;&#x636E;&#x5B89;&#x5168;&#x5206;&#x5C42;&#xFF0C;&#x4E3A;TCP/IP&#x8FDE;&#x63A5;&#x63D0;&#x4F9B;&#x4E86;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x3001;&#x6D88;&#x606F;&#x5B8C;&#x6574;&#x6027;&#x786E;&#x8BA4;&#x7B49;&#x5BA2;&#x6237;&#x673A;/&#x670D;&#x52A1;&#x5668;&#x8BA4;&#x8BC1;&#x673A;&#x5236;&#x3002;</p>
+<p> &#x5728;&#x4E00;&#x822C;&#x7684;HTTP&#x534F;&#x8BAE;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SSL&#x534F;&#x8BAE;&#x5BF9;HTTP&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x5904;&#x7406;&#xFF0C;&#x52A0;&#x5BC6;&#x540E;&#x7684;HTTP&#x534F;&#x8BAE;&#x5C06;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x7684;&#x4F20;&#x8F93;&#x66F4;&#x52A0;&#x5B89;&#x5168;&#x3002;&#x52A0;&#x5BC6;&#x540E;&#x7684;HTTP&#x534F;&#x8BAE;&#x5728;Web&#x4E0A;&#x4F7F;&#x7528;HTTPS&#x8BBF;&#x95EE;&#x3002;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;443&#x7AEF;&#x53E3;&#x3002;</p>
+<h2 id="openssl">OpenSSL</h2>
+<p>&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x7CFB;&#x7EDF;&#x4E2D;&#x4F7F;&#x7528;SSL&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5BF9;Apache&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x884C;&#x914D;&#x7F6E;&#xFF0C;&#x4F7F;&#x7528;mod_ssl&#x6A21;&#x5757;&#x80FD;&#x591F;&#x8FD0;&#x884C;&#x3002;&#x5E76;&#x4E14;&#x5728;&#x76F8;&#x5E94;&#x7684;SSL&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x6307;&#x5B9A;&#x670D;&#x52A1;&#x5668;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x8BC1;&#x4E66;&#x6587;&#x4EF6;&#x3002;OpenSSL&#x5C31;&#x662F;&#x4E00;&#x6B3E;&#x4E13;&#x95E8;&#x751F;&#x6210;SSL&#x8BC1;&#x4E66;&#x6587;&#x4EF6;&#x7684;&#x8F6F;&#x4EF6;&#x3002;</p>
+<h3 id="modssl&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;">mod_ssl&#x6A21;&#x5757;&#x7684;&#x914D;&#x7F6E;</h3>
+<p>mod_ssl&#x6A21;&#x5757;&#x662F;Apache&#x670D;&#x52A1;&#x5668;&#x4E13;&#x95E8;&#x7528;&#x6765;&#x652F;&#x6301;SSL&#x534F;&#x8BAE;&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x8BE5;&#x6A21;&#x5757;&#x4ECE;Apache2&#x5F00;&#x59CB;&#x968F;&#x53D1;&#x884C;&#x5305;&#x540C;&#x65F6;&#x53D1;&#x884C;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x6FC0;&#x6D3B;&#xFF0C;&#x914D;&#x7F6E;&#x8BE5;&#x529F;&#x80FD;&#x5E76;&#x4F7F;&#x5176;&#x5728;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x53EF;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x6765;&#x5B8C;&#x6210;&#x3002;</p>
+<ul>
+<li>&#x7528;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;Apache&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x7684;conf&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;httpd.conf</li>
+<li>&#x627E;&#x5230;mod_ssl.so&#x6587;&#x4EF6;&#x7684;&#x6240;&#x5728;&#x884C;&#xFF0C;&#x5E76;&#x5C06;&#x524D;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x6807;&#x8BC6;&#x53BB;&#x6389;</li>
+</ul>
+<pre><code> LoadModule ssl_module modules/mod_ssl.so
+</code></pre><ul>
+<li>&#x627E;&#x5230;&#x5305;&#x542B;httpd-ssl.conf&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7684;&#x6240;&#x5728;&#x884C;&#xFF0C;&#x5E76;&#x5C06;&#x524D;&#x9762;&#x7684;&#x6CE8;&#x91CA;&#x6807;&#x8BC6;&#x53BB;&#x6389;</li>
+</ul>
+<pre><code>Include conf/extra/httpd-ssl.conf
+</code></pre><ul>
+<li>&#x7528;&#x6587;&#x4EF6;&#x7F16;&#x8F91;&#x5668;&#x6253;&#x5F00;extra&#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x7684;httpd-ssl.conf&#x6587;&#x4EF6;&#xFF0C;&#x786E;&#x4FDD;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x5728;&#x8BE5;&#x6587;&#x4EF6;&#x4E2D;&#x627E;&#x5230;</li>
+</ul>
+<pre><code>Listen 445
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mail.html" class="navigation navigation-prev " aria-label="Previous page: MAIL">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="soap.html" class="navigation navigation-next " aria-label="Next page: XML-RPC、SOAP">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"SSL","level":"1.28","depth":1,"next":{"title":"XML-RPC、SOAP","level":"1.29","depth":1,"path":"soap.md","ref":"soap.md","articles":[]},"previous":{"title":"MAIL","level":"1.27","depth":1,"path":"mail.md","ref":"mail.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP学习笔记","language":"zh-hans","gitbook":"*","description":"PHP学习笔记"},"file":{"path":"ssl.md","mtime":"2019-04-07T11:18:39.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T11:19:31.802Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

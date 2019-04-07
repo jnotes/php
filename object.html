@@ -1,0 +1,901 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>面向对象 · PHP学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="trait.html" />
+    
+    
+    <link rel="prev" href="function.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="base/">
+            
+                <a href="base/">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="base/variable.html">
+            
+                <a href="base/variable.html">
+            
+                    
+                    常量与变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="base/keywords.html">
+            
+                <a href="base/keywords.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="base/process.html">
+            
+                <a href="base/process.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="base/expression.html">
+            
+                <a href="base/expression.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="base/global_variable.html">
+            
+                <a href="base/global_variable.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="base/file_include.html">
+            
+                <a href="base/file_include.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="base/output.html">
+            
+                <a href="base/output.html">
+            
+                    
+                    输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="base/heredoc.html">
+            
+                <a href="base/heredoc.html">
+            
+                    
+                    heredoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="trait.html">
+            
+                <a href="trait.html">
+            
+                    
+                    Trait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    程序调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    Session与Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="cache.html">
+            
+                <a href="cache.html">
+            
+                    
+                    缓存与静态化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="language.html">
+            
+                <a href="language.html">
+            
+                    
+                    多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http_client.html">
+            
+                <a href="http_client.html">
+            
+                    
+                    网络客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="pear.html">
+            
+                <a href="pear.html">
+            
+                    
+                    PEAR、PECL应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="accelerator.html">
+            
+                <a href="accelerator.html">
+            
+                    
+                    加速器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="gd.html">
+            
+                <a href="gd.html">
+            
+                    
+                    GD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="fpdf.html">
+            
+                <a href="fpdf.html">
+            
+                    
+                    FPDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="smarty.html">
+            
+                <a href="smarty.html">
+            
+                    
+                    Smarty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="ldap.html">
+            
+                <a href="ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="mail.html">
+            
+                <a href="mail.html">
+            
+                    
+                    MAIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="ssl.html">
+            
+                <a href="ssl.html">
+            
+                    
+                    SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="soap.html">
+            
+                <a href="soap.html">
+            
+                    
+                    XML-RPC、SOAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="web_service.html">
+            
+                <a href="web_service.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="htaccess.html">
+            
+                <a href="htaccess.html">
+            
+                    
+                    .htaccess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="extended.html">
+            
+                <a href="extended.html">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    语法规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >面向对象</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9762;&#x5411;&#x5BF9;&#x8C61;">&#x9762;&#x5411;&#x5BF9;&#x8C61;</h1>
+<h2 id="oop&#x7B80;&#x4ECB;">OOP&#x7B80;&#x4ECB;</h2>
+<p>&#x51FD;&#x6570;&#x662F;PHP&#x4E2D;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x7ED3;&#x6784;&#x5316;&#x7F16;&#x7A0B;&#x7684;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x51FD;&#x6570;&#x4E0E;&#x53D8;&#x91CF;&#x662F;&#x5206;&#x79BB;&#x7684;&#xFF0C;&#x5F53;&#x7CFB;&#x7EDF;&#x8FC7;&#x4E8E;&#x5BA0;&#x5927;&#x6216;&#x8005;&#x8981;&#x5904;&#x7406;&#x7684;&#x6570;&#x636E;&#x91CF;&#x7279;&#x522B;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5F80;&#x5F80;&#x4F1A;&#x5E26;&#x6765;&#x5F88;&#x591A;&#x9EBB;&#x70E6;&#x3002;&#x4F7F;&#x7528;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x53EF;&#x4EE5;&#x5F88;&#x6709;&#x6548;&#x7684;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x200B;</p>
+<ul>
+<li>&#x5177;&#x6709;&#x72EC;&#x7ACB;&#x6027;&#xFF0C;&#x8FD9;&#x6837;&#x4F7F;&#x7A0B;&#x5E8F;&#x7684;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x80FD;&#x591F;&#x5404;&#x81EA;&#x72EC;&#x7ACB;&#xFF0C;&#x4E0D;&#x4E92;&#x76F8;&#x7275;&#x5236;&#x3002;&#x6709;&#x5229;&#x4E8E;&#x540E;&#x671F;&#x7684;&#x7EF4;&#x62A4;&#x548C;&#x8C03;&#x8BD5;&#x3002;</li>
+<li>&#x5177;&#x6709;&#x7075;&#x6D3B;&#x6027;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x7EE7;&#x627F;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x65B0;&#x6A21;&#x5757;&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x5730;&#x7EE7;&#x627F;&#x5DF2;&#x6709;&#x5BF9;&#x8C61;&#x7684;&#x529F;&#x80FD;&#x3002;</li>
+<li>&#x5177;&#x6709;&#x901A;&#x7528;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x51E0;&#x4E2A;&#x5BF9;&#x8C61;&#x5177;&#x6709;&#x76F8;&#x540C;&#x7684;&#x7279;&#x5F81;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x7528;&#x5730;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5404;&#x81EA;&#x6839;&#x636E;&#x533A;&#x522B;&#x8FDB;&#x884C;&#x7EE7;&#x627F;&#x3002;</li>
+<li>&#x5177;&#x6709;&#x91CD;&#x7528;&#x6027;&#xFF0C;&#x5982;&#x679C;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x4E0E;&#x5DF2;&#x6709;&#x5BF9;&#x8C61;&#x529F;&#x80FD;&#x76F8;&#x540C;&#xFF0C;&#x5373;&#x4F7F;&#x4E0D;&#x5728;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#x4E2D;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x5C06;&#x5BF9;&#x8C61;&#x590D;&#x5236;&#x8FC7;&#x6765;&#xFF0C;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x5F88;&#x9EBB;&#x70E6;&#x5730;&#x5220;&#x51CF;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+<h2 id="&#x7C7B;&#x7B80;&#x4ECB;">&#x7C7B;&#x7B80;&#x4ECB;</h2>
+<p>&#x7C7B;&#x662F;&#x53D8;&#x91CF;&#x4E0E;&#x4F5C;&#x7528;&#x4E8E;&#x8FD9;&#x4E9B;&#x53D8;&#x91CF;&#x51FD;&#x6570;&#x7684;&#x96C6;&#x5408;&#x3002;&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x770B;&#x4F5C;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x6E90;&#x5934;&#x3002;&#x6709;&#x65F6;&#x5728;&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x4EFB;&#x4F55;&#x5B9E;&#x4F8B;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8BBF;&#x95EE;&#x7C7B;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x6216;&#x8005;&#x57FA;&#x7C7B;&#x4E2D;&#x7684;&#x51FD;&#x6570;&#x548C;&#x53D8;&#x91CF;&#x7684;&#x529F;&#x80FD;&#x4E5F;&#x5F88;&#x6709;&#x7528;&#x5904;&#x3002;&#x4F7F;&#x7528;&#x8FD9;&#x6837;&#x7684;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x9759;&#x6001;&#x7C7B;&#x3002;&#x9759;&#x6001;&#x7C7B;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7528;&#x7C7B;&#x540D;&#x8FDB;&#x884C;&#x8C03;&#x7528;&#x3002;</p>
+<h3 id="php5-vs-php4">PHP5 VS PHP4</h3>
+<ul>
+<li>PHP5 &#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>public</code>&#x3001;<code>private</code>&#x3001;<code>protected</code>&#x5BF9;&#x7C7B;&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x8BBF;&#x95EE;&#x8303;&#x56F4;&#x8FDB;&#x884C;&#x9650;&#x5B9A;</li>
+<li>PHP5 &#x5BF9;&#x6784;&#x9020;&#x51FD;&#x6570;&#x548C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x7684;&#x652F;&#x6301;</li>
+<li>PHP5 &#x63A5;&#x53E3;&#x7684;&#x5E94;&#x7528;</li>
+<li>PHP5 &#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>instanceof</code>&#x64CD;&#x4F5C;&#x7B26;&#x8FDB;&#x884C;&#x5BF9;&#x8C61;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;</li>
+<li>PHP5 &#x652F;&#x6301;&#x7C7B;&#x7684;&#x514B;&#x9686;</li>
+<li>PHP5 &#x652F;&#x6301;&#x9759;&#x6001;&#x7C7B;&#x53CA;&#x9759;&#x6001;&#x65B9;&#x6CD5;</li>
+<li>PHP5 &#x652F;&#x6301;&#x62BD;&#x8C61;&#x7C7B;&#x53CA;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;</li>
+</ul>
+<h3 id="&#x521B;&#x5EFA;&#x7C7B;">&#x521B;&#x5EFA;&#x7C7B;</h3>
+<pre><code class="lang-PHP"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">className</span></span>{
+  <span class="hljs-comment">// code...</span>
+}&#x200B;
+</code></pre>
+<h4 id="&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x53EF;&#x89C1;&#x6027;">&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x53EF;&#x89C1;&#x6027;</h4>
+<ul>
+<li><code>public</code> &#x516C;&#x5F00;</li>
+<li><code>private</code> &#x79C1;&#x6709;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x672C;&#x7C7B;&#x4E2D;&#x53EF;&#x89C1;</li>
+<li><code>protected</code> &#x4FDD;&#x62A4;&#xFF0C;&#x53EA;&#x80FD;&#x5728;&#x672C;&#x7C7B;&#x6216;&#x5B50;&#x7C7B;&#x4E2D;&#x624D;&#x53EF;&#x89C1;</li>
+</ul>
+<h4 id="&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x6001;">&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x5F62;&#x6001;</h4>
+<ul>
+<li><code>static</code> &#x58F0;&#x660E;&#x7C7B;&#x5C5E;&#x6027;&#x6216;&#x65B9;&#x6CD5;&#x4E3A; <code>static</code>(&#x9759;&#x6001;)&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x5B9E;&#x4F8B;&#x5316;&#x7C7B;&#x800C;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x3002;PHP&#x6CA1;&#x6709;&#x9759;&#x6001;&#x7C7B;&#xFF0C;&#x53EA;&#x6709;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x9759;&#x6001;&#x5C5E;&#x6027;</li>
+<li><code>final</code> &#x5982;&#x679C;&#x7236;&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x88AB;&#x58F0;&#x660E;&#x4E3A;<code>final</code>&#xFF0C;&#x5219;&#x5B50;&#x7C7B;&#x65E0;&#x6CD5;&#x8986;&#x76D6;&#x8BE5;&#x65B9;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x88AB;&#x58F0;&#x660E;&#x4E3A;<code>final</code>&#xFF0C;&#x5219;&#x4E0D;&#x80FD;&#x88AB;&#x7EE7;&#x627F;&#x3002;</li>
+</ul>
+<h4 id="&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;">&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</h4>
+<h5 id="&#x5C5E;&#x6027;&#x7684;&#x5B9A;&#x4E49;">&#x5C5E;&#x6027;&#x7684;&#x5B9A;&#x4E49;</h5>
+<pre><code class="lang-PHP"><span class="hljs-keyword">var</span> variable_name;&#x200B;
+</code></pre>
+<h4 id="&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;">&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;</h4>
+<pre><code class="lang-PHP"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getName</span><span class="hljs-params">()</span></span>{
+  <span class="hljs-comment">// code...</span>
+}
+</code></pre>
+<h4 id="&#x6784;&#x9020;&#x51FD;&#x6570;">&#x6784;&#x9020;&#x51FD;&#x6570;</h4>
+<ul>
+<li>&#x200B;&#x6784;&#x9020;&#x51FD;&#x6570;&#x662F;&#x7C7B;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x7279;&#x6B8A;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x5C06;&#x4F1A;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x6784;&#x9020;&#x51FD;&#x6570;&#x3002;&#x5728;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x51FD;&#x6570;&#x4E0E;&#x7C7B;&#x540C;&#x540D;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x4E00;&#x4E2A;&#x6784;&#x9020;&#x51FD;&#x6570;&#x200B;</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x51FD;&#x6570;&#x540D;&#x548C;&#x7C7B;&#x540D;&#x5FC5;&#x987B;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8FD4;&#x56DE;&#x7C7B;&#x578B;&#x548C;&#x8FD4;&#x56DE;&#x503C;&#x3002;</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x901A;&#x5E38;&#x662F;&#x5BF9;&#x7C7B;&#x4E2D;&#x7684;&#x5BF9;&#x8C61;&#x5B8C;&#x6210;&#x521D;&#x59CB;&#x5316;&#x5DE5;&#x4F5C;&#x3002;</li>
+<li>&#x6784;&#x9020;&#x51FD;&#x4E5D;&#x4E0E;&#x7C7B;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x51FD;&#x6570;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x6709;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x662F;&#x65E0;&#x53C2;&#x6570;&#x7684;&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<h4 id="&#x7279;&#x6B8A;&#x65B9;&#x6CD5;">&#x7279;&#x6B8A;&#x65B9;&#x6CD5;</h4>
+<ul>
+<li><code>__construct()</code></li>
+</ul>
+<p>&#x9664;&#x4E86;&#x4E0E;&#x7C7B;&#x540D;&#x76F8;&#x540C;&#x7684;&#x51FD;&#x6570;&#x6765;&#x521B;&#x5EFA;&#x6784;&#x9020;&#x51FD;&#x6570;&#x5916;&#xFF0C;&#x4F7F;&#x7528;PHP&#x63D0;&#x4F9B;&#x7684;__construct()&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F5C;&#x4E3A;&#x7C7B;&#x7684;&#x6784;&#x9020;&#x51FD;&#x6570;</p>
+<ul>
+<li><code>__destruct()</code></li>
+</ul>
+<p>&#x4E0E;&#x6784;&#x9020;&#x51FD;&#x6570;&#x76F8;&#x53CD;&#xFF0C;&#x6790;&#x6784;&#x51FD;&#x6570;&#x662F;&#x5728;&#x5BF9;&#x8C61;&#x88AB;&#x9500;&#x6BC1;&#x7684;&#x65F6;&#x5019;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x7684;&#x3002;</p>
+<ul>
+<li><code>__toString()</code></li>
+</ul>
+<p>&#x5BF9;&#x8C61;&#x8F6C;&#x6362;&#x6210;&#x5B57;&#x7B26;&#x4E32;&#x51FD;&#x6570;&#x200B;</p>
+<ul>
+<li><code>__clone()</code></li>
+</ul>
+<p>&#x5728;&#x6267;&#x884C;&#x514B;&#x9686;&#x64CD;&#x4F5C;&#x65F6;&#xFF0C;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x5C06;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x3002;</p>
+<h3 id="&#x7C7B;&#x7684;&#x5F15;&#x7528;">&#x7C7B;&#x7684;&#x5F15;&#x7528;</h3>
+<p>&#x4F7F;&#x7528;<code>new</code>&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x8FDB;&#x884C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x4F7F;&#x7528;<code>-&gt;</code>&#x7B26;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5BF9;&#x8C61;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;</p>
+<h3 id="&#x7C7B;&#x7684;&#x6269;&#x5C55;&#x4E0E;&#x7EE7;&#x627F;">&#x7C7B;&#x7684;&#x6269;&#x5C55;&#x4E0E;&#x7EE7;&#x627F;</h3>
+<p>&#x4E00;&#x4E2A;&#x7C7B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;extends&#x7EE7;&#x627F;&#x81EA;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7C7B;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x53EB;&#x7C7B;&#x7684;&#x6269;&#x5C55;</p>
+<pre><code class="lang-PHP"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">myClass</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">BaseClass</span></span>{
+  <span class="hljs-comment">// code...</span>
+}&#x200B;
+</code></pre>
+<ul>
+<li>&#x5B50;&#x7C7B;&#x7EE7;&#x627F;&#x81EA;&#x7236;&#x7C7B;&#xFF0C;&#x62E5;&#x6709;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#xFF0C;&#x5B50;&#x7C7B;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x6216;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>parent</code>&#x5173;&#x952E;&#x5B57;</li>
+<li>&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x65B9;&#x6CD5;&#x540D;&#x548C;&#x65B9;&#x6CD5;&#x53C2;&#x6570;&#x7C7B;&#x578B;&#x548C;&#x4E2A;&#x6570;&#x9700;&#x8981;&#x8DDF;&#x7236;&#x7C7B;&#x4E00;&#x6837;&#x3002;&#x5728;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x6B64;&#x65B9;&#x6CD5;&#x662F;&#x91CD;&#x5199;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x7236;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x4E0D;&#x4F1A;&#x6267;&#x884C;&#x3002;</li>
+<li>&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x5982;&#x679C;&#x6709;&#x4E24;&#x4E2A;&#x53CA;&#x4E24;&#x4E2A;&#x4EE5;&#x4E0A;&#x7684;&#x65B9;&#x6CD5;&#x540D;&#x79F0;&#x76F8;&#x540C;&#xFF0C;&#x4F46;&#x53C2;&#x6570;&#x7684;&#x4E2A;&#x6570;&#x4E0D;&#x540C;&#xFF0C;&#x79F0;&#x4E4B;&#x4E3A;&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x8F7D;&#x3002;</li>
+</ul>
+<pre><code class="lang-PHP"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">myClass</span></span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">show</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-comment">// code...</span>
+  }
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">show</span><span class="hljs-params">($name)</span></span>{
+    <span class="hljs-comment">// code...</span>
+  }&#x200B;&#x200B;
+}&#x200B;
+</code></pre>
+<h3 id="&#x64CD;&#x4F5C;&#x4E0E;&#x8C03;&#x7528;">&#x64CD;&#x4F5C;&#x4E0E;&#x8C03;&#x7528;</h3>
+<h4 id="&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#x7684;&#x8C03;&#x7528;">&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#x7684;&#x8C03;&#x7528;</h4>
+<p>&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x548C;&#x5C5E;&#x6027;&#x7684;&#x8C03;&#x7528;&#x4F7F;&#x7528;<code>::</code>&#x5B9E;&#x73B0;&#xFF0C;&#x9759;&#x6001;&#x7C7B;&#x4E0D;&#x9700;&#x8981;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x56E0;&#x6B64;&#x4E0D;&#x80FD;&#x50CF;&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x4F7F;&#x7528;<code>-&gt;</code>&#x8C03;&#x7528;&#x3002;</p>
+<h4 id="&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#x65B9;&#x6CD5;">&#x5B9E;&#x4F8B;&#x7C7B;&#x578B;&#x7684;&#x5224;&#x65AD;&#x65B9;&#x6CD5;</h4>
+<p>&#x901A;&#x8FC7;&#x7C7B;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x4F46;&#x662F;&#x5F53;&#x7CFB;&#x7EDF;&#x8FC7;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9700;&#x8981;&#x5224;&#x65AD;&#x67D0;&#x4E2A;&#x5BF9;&#x8C61;&#x662F;&#x5426;&#x662F;&#x67D0;&#x4E2A;&#x7C7B;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>instanceof</code>&#x65B9;&#x6CD5;&#x6765;&#x8FDB;&#x884C;<code>$obj instanceof className&#x200B;</code></p>
+<h4 id="&#x5BF9;&#x8C61;&#x514B;&#x9686;">&#x5BF9;&#x8C61;&#x514B;&#x9686;</h4>
+<p>&#x9664;&#x4E86;&#x901A;&#x8FC7;&#x7C7B;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#x5916;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x514B;&#x9686;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x65B0;&#x7684;&#x5BF9;&#x8C61;&#x4F1A;&#x62E5;&#x6709;&#x88AB;&#x514B;&#x9686;&#x5BF9;&#x8C61;&#x7684;&#x5168;&#x90E8;&#x5C5E;&#x6027;&#x3002;<code>$newObj = clone $obj;&#x200B;</code></p>
+<h2 id="&#x63A5;&#x53E3;">&#x63A5;&#x53E3;</h2>
+<p>&#x63A5;&#x53E3;&#x662F;&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x4E00;&#x79CD;&#x7279;&#x5B9A;&#x529F;&#x80FD;&#x800C;&#x9884;&#x7559;&#x7684;&#x7C7B;&#x4F3C;&#x7C7B;&#x7684;&#x4E00;&#x79CD;&#x7C7B;&#x578B;&#x3002;&#x5728;&#x63A5;&#x53E3;&#x4E2D;&#xFF0C;&#x53EA;&#x5141;&#x8BB8;&#x5B9A;&#x4E49;&#x5E38;&#x91CF;&#x548C;&#x51FD;&#x6570;&#x3002;&#x8FD9;&#x91CC;&#x7684;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x51FD;&#x6570;&#x4F53;&#x6765;&#x8868;&#x793A;&#x51FD;&#x6570;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x53EA;&#x6709;&#x51FD;&#x6570;&#x58F0;&#x660E;&#xFF0C;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x662F;&#x63D0;&#x4F9B;&#x7ED9;&#x7C7B;&#x4E00;&#x79CD;&#x7C7B;&#x4F3C;&#x4E8E;&#x6A21;&#x677F;&#x7684;&#x6846;&#x67B6;&#xFF0C;&#x4EE5;&#x65B9;&#x4FBF;&#x6784;&#x5EFA;&#x3002;</p>
+<h3 id="&#x63A5;&#x53E3;&#x5B9A;&#x4E49;">&#x63A5;&#x53E3;&#x5B9A;&#x4E49;</h3>
+<pre><code class="lang-PHP"><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">interfaceName</span></span>{
+  <span class="hljs-comment">// code...</span>
+}
+</code></pre>
+<h3 id="&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;">&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</h3>
+<p>&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x4E0E;&#x6269;&#x5C55;&#x4E00;&#x4E2A;&#x7C7B;&#x7684;&#x5F62;&#x5F0F;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x662F;&#x5728;&#x5B9A;&#x4E49;&#x7684;&#x65F6;&#x5019;&#x7528;&#x5173;&#x952E;&#x5B57;<code>implements</code>&#x8868;&#x793A;&#x3002;</p>
+<pre><code class="lang-PHP"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">className</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">baseClass</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">interfaceName</span></span>{&#x200B;
+  <span class="hljs-comment">// code...</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">className</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">interfaceName1</span>,<span class="hljs-title">interfaceName2</span></span>{
+  <span class="hljs-comment">// code...</span>
+&#x200B;}&#x200B;&#x200B;&#x200B;
+</code></pre>
+<h3 id="&#x62BD;&#x8C61;&#x7C7B;">&#x62BD;&#x8C61;&#x7C7B;</h3>
+<p>&#x62BD;&#x8C61;&#x7C7B;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x6CD5;&#x662F;&#x5728;&#x4E00;&#x822C;&#x7C7B;&#x5B9A;&#x4E49;&#x65F6;&#x7684;<code>class</code>&#x5173;&#x952E;&#x5B57;&#x7684;&#x524D;&#x9762;&#x6DFB;&#x52A0;<code>abstract</code>&#x5173;&#x952E;&#x5B57;</p>
+<pre><code class="lang-PHP">abstrace <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">className</span></span>{
+  <span class="hljs-comment">// code...</span>
+}&#x200B;
+</code></pre>
+<h4 id="&#x62BD;&#x8C61;&#x7C7B;&#x4E0E;&#x63A5;&#x53E3;&#x7684;&#x533A;&#x522B;">&#x62BD;&#x8C61;&#x7C7B;&#x4E0E;&#x63A5;&#x53E3;&#x7684;&#x533A;&#x522B;</h4>
+<ul>
+<li>&#x62BD;&#x8C61;&#x7C7B;&#x4E0D;&#x80FD;&#x591F;&#x7528;&#x6765;&#x521B;&#x5EFA;&#x5BF9;&#x8C61;&#xFF0C;&#x53EA;&#x80FD;&#x591F;&#x7528;&#x4E8E;&#x7EE7;&#x627F;&#x3002;</li>
+<li>&#x63A5;&#x53E3;&#x4F7F;&#x7528;<code>interface</code>&#x6765;&#x5B9A;&#x4E49;&#xFF0C;&#x62BD;&#x8C61;&#x7C7B;&#x4F7F;&#x7528;<code>abstract class</code>&#x6765;&#x5B9A;&#x4E49;</li>
+<li>&#x5B9E;&#x73B0;&#x63A5;&#x53E3;&#x4F7F;&#x7528;<code>implements</code>&#xFF0C;&#x5B9E;&#x73B0;&#x62BD;&#x8C61;&#x7C7B;&#x4F7F;&#x7528;<code>extends</code></li>
+<li>&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x53EA;&#x80FD;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x62BD;&#x8C61;&#x7C7B;</li>
+<li>&#x5728;&#x63A5;&#x53E3;&#x4E2D;&#x4E0D;&#x53EF;&#x4EE5;&#x6709;&#x51FD;&#x6570;&#x7684;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#xFF0C;&#x5728;&#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#x53EF;&#x4EE5;&#x6709;&#x5177;&#x4F53;&#x7684;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;&#x62BD;&#x8C61;&#x7C7B;&#x53EF;&#x4EE5;&#x5305;&#x62EC;&#x975E;&#x62BD;&#x8C61;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x53EA;&#x6709;&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x4E0D;&#x9700;&#x8981;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x3002;</li>
+</ul>
+<h4 id="&#x62BD;&#x8C61;&#x65B9;&#x6CD5;">&#x62BD;&#x8C61;&#x65B9;&#x6CD5;</h4>
+<p>&#x62BD;&#x8C61;&#x65B9;&#x6CD5;&#x53EA;&#x80FD;&#x5B58;&#x5728;&#x4E8E;&#x62BD;&#x8C61;&#x7C7B;&#x4E2D;&#xFF0C;&#x5728;&#x5173;&#x952E;&#x5B57;<code>function</code>&#x524D;&#x52A0;<code>abstract</code>&#x5173;&#x952E;&#x5B57;&#x200B;&#x200B;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="function.html" class="navigation navigation-prev " aria-label="Previous page: 函数处理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="trait.html" class="navigation navigation-next " aria-label="Next page: Trait">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"面向对象","level":"1.6","depth":1,"next":{"title":"Trait","level":"1.7","depth":1,"path":"trait.md","ref":"trait.md","articles":[]},"previous":{"title":"函数处理","level":"1.5","depth":1,"path":"function.md","ref":"function.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP学习笔记","language":"zh-hans","gitbook":"*","description":"PHP学习笔记"},"file":{"path":"object.md","mtime":"2019-04-07T11:18:39.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T11:19:31.802Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

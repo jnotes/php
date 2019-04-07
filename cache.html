@@ -1,0 +1,783 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>缓存与静态化 · PHP学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="language.html" />
+    
+    
+    <link rel="prev" href="session.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="base/">
+            
+                <a href="base/">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="base/variable.html">
+            
+                <a href="base/variable.html">
+            
+                    
+                    常量与变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="base/keywords.html">
+            
+                <a href="base/keywords.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="base/process.html">
+            
+                <a href="base/process.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="base/expression.html">
+            
+                <a href="base/expression.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="base/global_variable.html">
+            
+                <a href="base/global_variable.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="base/file_include.html">
+            
+                <a href="base/file_include.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="base/output.html">
+            
+                <a href="base/output.html">
+            
+                    
+                    输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="base/heredoc.html">
+            
+                <a href="base/heredoc.html">
+            
+                    
+                    heredoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="trait.html">
+            
+                <a href="trait.html">
+            
+                    
+                    Trait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    程序调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    Session与Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="cache.html">
+            
+                <a href="cache.html">
+            
+                    
+                    缓存与静态化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="language.html">
+            
+                <a href="language.html">
+            
+                    
+                    多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http_client.html">
+            
+                <a href="http_client.html">
+            
+                    
+                    网络客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="pear.html">
+            
+                <a href="pear.html">
+            
+                    
+                    PEAR、PECL应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="accelerator.html">
+            
+                <a href="accelerator.html">
+            
+                    
+                    加速器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="gd.html">
+            
+                <a href="gd.html">
+            
+                    
+                    GD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="fpdf.html">
+            
+                <a href="fpdf.html">
+            
+                    
+                    FPDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="smarty.html">
+            
+                <a href="smarty.html">
+            
+                    
+                    Smarty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="ldap.html">
+            
+                <a href="ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="mail.html">
+            
+                <a href="mail.html">
+            
+                    
+                    MAIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="ssl.html">
+            
+                <a href="ssl.html">
+            
+                    
+                    SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="soap.html">
+            
+                <a href="soap.html">
+            
+                    
+                    XML-RPC、SOAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="web_service.html">
+            
+                <a href="web_service.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="htaccess.html">
+            
+                <a href="htaccess.html">
+            
+                    
+                    .htaccess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="extended.html">
+            
+                <a href="extended.html">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    语法规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >缓存与静态化</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7F13;&#x5B58;&#x4E0E;&#x9759;&#x6001;&#x5316;">&#x7F13;&#x5B58;&#x4E0E;&#x9759;&#x6001;&#x5316;</h1>
+<p>&#x9759;&#x6001;&#x5316;&#x6240;&#x5F97;&#x5230;&#x7684;&#x9875;&#x9762;&#x7ED3;&#x679C;&#x4E0E;&#x901A;&#x8FC7;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#x7684;&#x7ED3;&#x679C;&#x5B8C;&#x5168;&#x76F8;&#x540C;&#x3002;&#x9759;&#x6001;&#x5316;&#x7684;&#x4E3B;&#x8981;&#x76EE;&#x7684;&#x5C31;&#x662F;&#x63D0;&#x9AD8;&#x9875;&#x9762;&#x7684;&#x8BBF;&#x95EE;&#x6027;&#x80FD;&#x3002;</p>
+<h2 id="&#x7F13;&#x5B58;&#x673A;&#x5236;">&#x7F13;&#x5B58;&#x673A;&#x5236;</h2>
+<p>&#x7F13;&#x5B58;&#x662F;&#x4E00;&#x79CD;&#x63D0;&#x6027;&#x80FD;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x3002;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x901A;&#x5E38;&#x7528;&#x4E8E;&#x7F13;&#x89E3;&#x5927;&#x8BBF;&#x95EE;&#x91CF;&#x7684;&#x6570;&#x636E;&#x5E93;&#x548C;&#x78C1;&#x76D8;&#x8D1F;&#x62C5;&#xFF0C;&#x6709;&#x6548;&#x5730;&#x5E94;&#x7528;&#x7F13;&#x5B58;&#x673A;&#x5236;&#x53EF;&#x4EE5;&#x5F88;&#x5927;&#x51CF;&#x5C11;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x548C;&#x78C1;&#x76D8;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x5728;PHP&#x4E2D;&#x76EE;&#x524D;&#x5DF2;&#x7ECF;&#x6709;&#x591A;&#x79CD;&#x7F13;&#x5B58;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF0C;&#x4F8B;&#x5982;:<code>PEAR Cache</code>&#x3001;<code>Zend Cache</code>&#x3001;<code>Alternative PHP Cache</code>&#x3001;&#x548C;<code>Afterburner Cache</code>&#x7B49;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;PHP&#x6765;&#x8BF4;&#xFF0C;&#x4E0A;&#x8FF0;&#x7F13;&#x5B58;&#x6A21;&#x5757;&#x4F1A;&#x5728;&#x4EE3;&#x7801;&#x88AB;&#x7B2C;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x7684;&#x65F6;&#x5019;&#x5C06;PHP&#x7684;&#x4E2D;&#x95F4;&#x4EE3;&#x7801;&#x4FDD;&#x5B58;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;&#x5185;&#x5B58;&#x4E2D;&#x3002;&#x4E2D;&#x97F3;&#x4EE3;&#x7801;&#x6307;&#x7684;&#x662F;&#x7F16;&#x8BD1;&#x3001;&#x89E3;&#x6790;&#x8FC7;&#x7684;PHP&#x4EE3;&#x7801;&#x3002;&#x5F53;&#x7B2C;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x540E;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x8BBF;&#x95EE;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x4EE3;&#x7801;&#x76F4;&#x63A5;&#x4ECE;&#x670D;&#x52A1;&#x5668;&#x4E2D;&#x7684;&#x7F13;&#x5B58;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x7F13;&#x5B58;&#x6A21;&#x5757;&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x7279;&#x6027;&#x662F;&#x80FD;&#x591F;&#x76D1;&#x89C6;PHP&#x4EE3;&#x7801;&#x548C;&#x6570;&#x636E;&#x7684;&#x53D8;&#x5316;&#x3002;&#x8FD9;&#x4E2A;&#x7279;&#x6027;&#x80FD;&#x591F;&#x6709;&#x6548;&#x5730;&#x4FDD;&#x8BC1;PHP&#x4EE3;&#x7801;&#x88AB;&#x4FEE;&#x6539;&#x6216;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x540E;&#xFF0C;&#x8BBF;&#x95EE;&#x8005;&#x53EF;&#x4EE5;&#x53CA;&#x65F6;&#x770B;&#x5230;&#x66F4;&#x65B0;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x83B7;&#x53D6;&#x5230;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x65E7;&#x7684;&#x9875;&#x9762;&#x3002;</p>
+<h2 id="&#x9759;&#x6001;&#x673A;&#x5236;">&#x9759;&#x6001;&#x673A;&#x5236;</h2>
+<p>&#x9759;&#x6001;&#x5316;&#x5373;&#x5C06;&#x52A8;&#x6001;&#x7684;&#x811A;&#x672C;&#x6587;&#x4EF6;&#x751F;&#x6210;&#x9759;&#x6001;&#x7684;HTML&#x9875;&#x9762;&#x3002;&#x7531;&#x4E8E;&#x9759;&#x6001;HTML&#x9875;&#x9762;&#x6CA1;&#x6709;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x3001;&#x78C1;&#x76D8;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x751A;&#x81F3;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x903B;&#x8F91;&#x8BA1;&#x7B97;&#xFF0C;&#x8BBF;&#x95EE;&#x901F;&#x5EA6;&#x6781;&#x5FEB;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x9759;&#x6001;&#x5316;">&#x5B9E;&#x73B0;&#x9759;&#x6001;&#x5316;</h2>
+<h3 id="&#x6839;&#x636E;&#x6A21;&#x677F;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;">&#x6839;&#x636E;&#x6A21;&#x677F;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;</h3>
+<p>&#x6A21;&#x677F;&#x662F;&#x8981;&#x751F;&#x6210;&#x7684;&#x9759;&#x6001;&#x9875;&#x9762;&#x7684;&#x7248;&#x672C;&#x3002;&#x6839;&#x636E;&#x6A21;&#x677F;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x901A;&#x8FC7;&#x6A21;&#x677F;&#x751F;&#x6210;&#x7684;&#x5185;&#x5BB9;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#x3002;</p>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x4E0E;&#x9759;&#x6001;&#x9875;&#x7684;&#x5173;&#x7CFB;">&#x6570;&#x636E;&#x5E93;&#x4E0E;&#x9759;&#x6001;&#x9875;&#x7684;&#x5173;&#x7CFB;</h3>
+<p>&#x901A;&#x8FC7;&#x5C06;&#x9759;&#x6001;&#x9875;&#x7684;&#x5E94;&#x7528;&#x4E0E;&#x6570;&#x636E;&#x52A0;&#x7684;&#x5E94;&#x7528;&#x8054;&#x7CFB;&#x8D77;&#x6765;&#x3002;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x9759;&#x6001;HTML&#x9875;&#x9762;&#x7684;&#x751F;&#x6210;&#x662F;&#x5728;&#x7CFB;&#x7EDF;&#x5411;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684;&#x65F6;&#x5019;&#x3002;</p>
+<h3 id="&#x9759;&#x6001;&#x5185;&#x5BB9;&#x7684;&#x4FEE;&#x6539;">&#x9759;&#x6001;&#x5185;&#x5BB9;&#x7684;&#x4FEE;&#x6539;</h3>
+<p>&#x5BF9;&#x5185;&#x5BB9;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x9759;&#x6001;&#x9875;&#x9762;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="session.html" class="navigation navigation-prev " aria-label="Previous page: Session与Cookie">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="language.html" class="navigation navigation-next " aria-label="Next page: 多语言">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"缓存与静态化","level":"1.17","depth":1,"next":{"title":"多语言","level":"1.18","depth":1,"path":"language.md","ref":"language.md","articles":[]},"previous":{"title":"Session与Cookie","level":"1.16","depth":1,"path":"session.md","ref":"session.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP学习笔记","language":"zh-hans","gitbook":"*","description":"PHP学习笔记"},"file":{"path":"cache.md","mtime":"2019-04-07T11:18:39.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T11:19:31.802Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

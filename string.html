@@ -1,0 +1,830 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>字符串处理 · PHP学习笔记</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="array.html" />
+    
+    
+    <link rel="prev" href="file.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="environment.html">
+            
+                <a href="environment.html">
+            
+                    
+                    环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="base/">
+            
+                <a href="base/">
+            
+                    
+                    基础语法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="base/variable.html">
+            
+                <a href="base/variable.html">
+            
+                    
+                    常量与变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="base/keywords.html">
+            
+                <a href="base/keywords.html">
+            
+                    
+                    关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="base/process.html">
+            
+                <a href="base/process.html">
+            
+                    
+                    流程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="base/expression.html">
+            
+                <a href="base/expression.html">
+            
+                    
+                    表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="base/global_variable.html">
+            
+                <a href="base/global_variable.html">
+            
+                    
+                    全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="base/file_include.html">
+            
+                <a href="base/file_include.html">
+            
+                    
+                    文件包含
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="base/output.html">
+            
+                <a href="base/output.html">
+            
+                    
+                    输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="base/heredoc.html">
+            
+                <a href="base/heredoc.html">
+            
+                    
+                    heredoc
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="type.html">
+            
+                <a href="type.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="function.html">
+            
+                <a href="function.html">
+            
+                    
+                    函数处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="object.html">
+            
+                <a href="object.html">
+            
+                    
+                    面向对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="trait.html">
+            
+                <a href="trait.html">
+            
+                    
+                    Trait
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="file.html">
+            
+                <a href="file.html">
+            
+                    
+                    文件系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="string.html">
+            
+                <a href="string.html">
+            
+                    
+                    字符串处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="array.html">
+            
+                <a href="array.html">
+            
+                    
+                    数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    程序调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="exception.html">
+            
+                <a href="exception.html">
+            
+                    
+                    异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="logs.html">
+            
+                <a href="logs.html">
+            
+                    
+                    日志记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="database.html">
+            
+                <a href="database.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="session.html">
+            
+                <a href="session.html">
+            
+                    
+                    Session与Cookie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="cache.html">
+            
+                <a href="cache.html">
+            
+                    
+                    缓存与静态化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="language.html">
+            
+                <a href="language.html">
+            
+                    
+                    多语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="http_client.html">
+            
+                <a href="http_client.html">
+            
+                    
+                    网络客户端
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="pear.html">
+            
+                <a href="pear.html">
+            
+                    
+                    PEAR、PECL应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="accelerator.html">
+            
+                <a href="accelerator.html">
+            
+                    
+                    加速器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="gd.html">
+            
+                <a href="gd.html">
+            
+                    
+                    GD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="fpdf.html">
+            
+                <a href="fpdf.html">
+            
+                    
+                    FPDF
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="xml.html">
+            
+                <a href="xml.html">
+            
+                    
+                    XML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="smarty.html">
+            
+                <a href="smarty.html">
+            
+                    
+                    Smarty
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="ldap.html">
+            
+                <a href="ldap.html">
+            
+                    
+                    LDAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.27" data-path="mail.html">
+            
+                <a href="mail.html">
+            
+                    
+                    MAIL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.28" data-path="ssl.html">
+            
+                <a href="ssl.html">
+            
+                    
+                    SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.29" data-path="soap.html">
+            
+                <a href="soap.html">
+            
+                    
+                    XML-RPC、SOAP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.30" data-path="web_service.html">
+            
+                <a href="web_service.html">
+            
+                    
+                    Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.31" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    Ajax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.32" data-path="htaccess.html">
+            
+                <a href="htaccess.html">
+            
+                    
+                    .htaccess
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.33" data-path="extended.html">
+            
+                <a href="extended.html">
+            
+                    
+                    扩展开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.34" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    语法规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >字符串处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;">&#x5B57;&#x7B26;&#x4E32;&#x5904;&#x7406;</h1>
+<h2 id="&#x5B57;&#x7B26;">&#x5B57;&#x7B26;</h2>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x7531;&#x5B57;&#x7B26;&#x7EC4;&#x6210;&#x7684;&#xFF0C;&#x5B57;&#x7B26;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x7C7B;&#x578B;</p>
+<ul>
+<li>&#x6570;&#x5B57;</li>
+<li>&#x5B57;&#x6BCD;</li>
+<li>&#x7279;&#x6B8A;&#x5B57;&#x7B26;</li>
+<li>&#x4E0D;&#x53EF;&#x89C1;&#x5B57;&#x7B26;
+&#x4E0D;&#x53EF;&#x89C1;&#x5B57;&#x7B26;&#x662F;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#x7684;&#x4E00;&#x7EC4;&#x5B57;&#x7B26;&#xFF0C;&#x662F;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x7684;&#xFF0C;&#x5E76;&#x4E0D;&#x80FD;&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x770B;&#x5230;&#x5B57;&#x7B26;&#x672C;&#x8EAB;&#xFF0C;&#x800C;&#x53EA;&#x80FD;&#x770B;&#x5230;&#x5B57;&#x7B26;&#x5E26;&#x6765;&#x7684;&#x4E00;&#x4E9B;&#x7ED3;&#x679C;&#x3002;&#x200B;</li>
+</ul>
+<h3 id="&#x5B57;&#x7B26;&#x7684;&#x663E;&#x793A;">&#x5B57;&#x7B26;&#x7684;&#x663E;&#x793A;</h3>
+<p>&#x5B57;&#x7B26;&#x7684;&#x663E;&#x793A;&#x4E3B;&#x8981;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;<code>print</code>&#x548C;<code>echo</code>&#x8FDB;&#x884C;&#x8F93;&#x51FA;&#x3002;<code>print</code>&#x662F;&#x4E00;&#x4E2A;&#x7C7B;&#x4F3C;&#x4E8E;&#x51FD;&#x6570;&#x7684;&#x8F93;&#x51FA;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x662F;<code>print</code>&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x771F;&#x6B63;&#x610F;&#x4E49;&#x4E0A;&#x7684;&#x51FD;&#x6570;&#x3002;<code>echo</code>&#x652F;&#x6301;&#x591A;&#x53C2;&#x6570;&#xFF0C;<code>print</code>&#x4E0D;&#x652F;&#x6301;&#xFF0C;&#x4E24;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;&#x4F7F;&#x7528;&quot;.&quot;&#x7B26;&#x53F7;&#x3002;</p>
+<h3 id="&#x5B57;&#x7B26;&#x7684;&#x683C;&#x5F0F;&#x5316;">&#x5B57;&#x7B26;&#x7684;&#x683C;&#x5F0F;&#x5316;</h3>
+<p>&#x200B;&#x200B;&#x4F7F;&#x7528;<code>sprintf</code>&#x51FD;&#x6570;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;&#x64CD;&#x4F5C;&#x3002;</p>
+<p><code>string sprintf(string format,str1,str2)</code></p>
+<p><code>format</code>&#x662F;&#x8981;&#x8F93;&#x51FA;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;&#xFF0C;<code>str1</code>,<code>str2</code>&#x7B49;&#x662F;&#x8981;&#x683C;&#x5F0F;&#x5316;&#x8F93;&#x51FA;&#x7684;&#x5176;&#x4ED6;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>format</code>&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x683C;&#x5F0F;&#x7531;&#x4E00;&#x822C;&#x7684;&#x5B57;&#x7B26;&#x548C;&#x4E00;&#x4E9B;&#x4EE5;<code>%</code>&#x53F7;&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;&#x6784;&#x6210;&#xFF0C;&#x8FD9;&#x4E9B;&#x4EE5;<code>%</code>&#x5F00;&#x5934;&#x7684;&#x5B57;&#x7B26;&#x7528;&#x6765;&#x6307;&#x4EE3;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x3002;&#x8FD9;&#x4E9B;&#x5B57;&#x7B26;&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x3002;&#x200B;&#x200B;</p>
+<ul>
+<li><code>%b</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x4E8C;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</li>
+<li><code>%c</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;ASCII&#x7801;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</li>
+<li><code>%d</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x6709;&#x7B26;&#x53F7;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</li>
+<li><code>%u</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x65E0;&#x7B26;&#x53F7;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</li>
+<li><code>%o</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x516B;&#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#x3002;</li>
+<li><code>%x</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x4E3A;&#x5C0F;&#x5199;&#x5F62;&#x5F0F;&#x3002;</li>
+<li><code>%X</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6574;&#x578B;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4EE5;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x6570;&#x5F62;&#x5F0F;&#x8F93;&#x51FA;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x4E3A;&#x5927;&#x5199;&#x5F62;&#x5F0F;&#x3002;</li>
+<li><code>%f</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x6D6E;&#x70B9;&#x6570;&#x3002;</li>
+<li><code>%s</code> &#x53C2;&#x6570;&#x5C06;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;</li>
+</ul>
+<h2 id="&#x5B57;&#x7B26;&#x7684;&#x64CD;&#x4F5C;">&#x5B57;&#x7B26;&#x7684;&#x64CD;&#x4F5C;</h2>
+<h3 id="strrepeat"><code>str_repeat</code></h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x91CD;&#x590D;&#x64CD;&#x4F5C;,<code>string str_repeat(string input,int multiplier)</code>,&#x8FD9;&#x91CC;&#x7684;<code>input</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x7684;&#x662F;&#x8981;&#x91CD;&#x590D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>multiplier</code>&#x8868;&#x793A;&#x7684;&#x662F;&#x91CD;&#x590D;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<h3 id="strreplace&#x548C;strireplace"><code>str_replace</code>&#x548C;<code>str_ireplace</code></h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x66FF;&#x6362;</p>
+<h4 id="strreplace"><code>str_replace</code></h4>
+<p><code>string str_replace(search,replace,subject [,int count])</code>&#xFF0C;&#x8FD9;&#x91CC;<code>subject</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>search</code>&#x662F;&#x67E5;&#x627E;&#x5185;&#x5BB9;&#xFF0C;<code>replace</code>&#x662F;&#x8981;&#x66FF;&#x6362;&#x6210;&#x7684;&#x5185;&#x5BB9;&#xFF0C;<code>count</code>&#x7528;&#x6765;&#x63A5;&#x6536;&#x66FF;&#x6362;&#x7684;&#x6B21;&#x6570;&#x3002;</p>
+<h4 id="strireplace"><code>str_ireplace</code></h4>
+<p><code>str_ireplace</code>&#x51FD;&#x6570;&#x7684;&#x7528;&#x9014;&#x975E;&#x5E38;&#x5E7F;&#x6CDB;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5728;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x548C;&#x6A21;&#x677F;&#x5F0F;&#x7F51;&#x7AD9;&#x7CFB;&#x7EDF;&#x4E2D;&#x3002;&#x4F46;&#x662F;<code>str_replace</code>&#x6709;&#x4E00;&#x4E2A;&#x5F88;&#x5927;&#x7684;&#x4E0D;&#x8DB3;&#x5C31;&#x662F;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x3002;&#x56E0;&#x6B64;&#x5728;&#x5982;&#x679C;&#x8981;&#x5B9E;&#x73B0;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x7684;&#x66FF;&#x6362;&#x4FE1;&#x606F;&#x65F6;&#x5C31;&#x4F1A;&#x975E;&#x5E38;&#x9EBB;&#x70E6;&#x3002;<code>str_ireplace</code>&#x548C;<code>str_replace</code>&#x7684;&#x533A;&#x522B;&#x662F;<code>str_ireplace</code>&#x5BF9;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x3002;</p>
+<h3 id="strsplit"><code>str_split</code></h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x89E3;&#x64CD;&#x4F5C;&#xFF0C;<code>array str_split(string str [, int split_length])</code>&#x8FD9;&#x91CC;,<code>str</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x5206;&#x89E3;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>split_length</code>&#x662F;&#x5206;&#x89E3;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6BCF;&#x5C0F;&#x6BB5;&#x6709;&#x591A;&#x957F;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;<code>split_length</code>&#xFF0C;&#x5C31;&#x9ED8;&#x8BA4;&#x4E3A;<code>1</code>&#x3002;</p>
+<h3 id="strwordcount"><code>str_word_count</code></h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5355;&#x8BCD;&#x6570;&#x7684;&#x8BA1;&#x7B97;&#x51FD;&#x6570;&#xFF0C;<code>str_word_count(string str [, int format])</code>&#x8FD9;&#x91CC;&#xFF0C;<code>str</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x5206;&#x89E3;&#x6216;&#x8005;&#x8BA1;&#x7B97;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>format</code>&#x5305;&#x62EC;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;<code>format</code>&#x8FD4;&#x56DE;&#x5355;&#x8BCD;&#x6570;&#x91CF;&#x3002;<code>format</code>&#x4E3A;<code>1</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;<code>str</code>&#x4E2D;&#x5168;&#x90E8;&#x5355;&#x8BCD;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x952E;&#x503C;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;&#x200B;<code>format</code>&#x4E3A;<code>2</code>&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x5305;&#x542B;<code>str</code>&#x4E2D;&#x5168;&#x90E8;&#x5355;&#x8BCD;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x952E;&#x503C;&#x53CD;&#x6620;&#x4E86;&#x5355;&#x8BCD;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;&#x3002;&#x200B;</p>
+<h3 id="strstr"><code>strstr</code></h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x67E5;&#x627E;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;PHP&#x4E2D;&#x4F7F;&#x7528;<code>strstr</code>&#x548C;<code>stristr</code>&#x51FD;&#x6570;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x67E5;&#x627E;&#x64CD;&#x4F5C;&#x3002;<code>string strstr(string str,string search)</code>,&#x8FD9;&#x91CC;&#x7684;&#xFF0C;<code>str</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x67E5;&#x627E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>search</code>&#x662F;&#x8981;&#x67E5;&#x627E;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x627E;&#x5230;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5168;&#x5339;&#x914D;&#x7684;&#x4F4D;&#x7F6E;&#x4EE5;&#x540E;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x3002;<code>strstr</code>&#x662F;&#x5927;&#x5C0F;&#x5199;&#x654F;&#x611F;&#x7684;&#xFF0C;<code>stristr</code>&#x662F;&#x5927;&#x5C0F;&#x5199;&#x4E0D;&#x654F;&#x611F;&#x7684;&#x3002;</p>
+<h3 id="strlen"><code>strlen</code></h3>
+<p>&#x83B7;&#x53D6;&#x5B57;&#x7B26;&#x4E32;&#x957F;&#x5EA6;&#xFF0C;<code>int strlen(string str)</code></p>
+<h3 id="substr"><code>substr</code></h3>
+<p>&#x83B7;&#x53D6;&#x5B50;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x901A;&#x5E38;&#x9700;&#x8981;&#x622A;&#x53D6;&#x67D0;&#x4E00;&#x6BB5;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>substr</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x622A;&#x53D6;&#x4E00;&#x90E8;&#x5206;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x5176;&#x8BED;&#x6CD5;&#x683C;&#x5F0F;&#x662F;<code>string substr(string str,int start [, int length])</code>&#xFF0C;&#x8FD9;&#x91CC;&#x7684;<code>str</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x622A;&#x53D6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>start</code>&#x662F;&#x5F00;&#x59CB;&#x5B57;&#x7B26;&#x4F4D;&#x7F6E;&#xFF0C;<code>length</code>&#x662F;&#x8981;&#x622A;&#x53D6;&#x7684;&#x957F;&#x5EA6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;<code>length</code>&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x622A;&#x53D6;&#x5230;&#x5B57;&#x7B26;&#x4E32;&#x672A;&#x5C3E;&#x3002;</p>
+<h2 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h2>
+<p>&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x662F;&#x63CF;&#x8FF0;&#x5B57;&#x7B26;&#x4E32;&#x96C6;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;<code>*PHP*</code>&#x63CF;&#x8FF0;&#x6240;&#x6709;&#x5305;&#x542B;<code>PHP</code>&#x5E76;&#x4E14;&#x524D;&#x9762;&#x6216;&#x540E;&#x9762;&#x8DDF;&#x96F6;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x5982;&#xFF1A;<code>PHPMyadmin</code>&#x3001;<code>MyPHP</code>&#x3001;<code>ZendPHPFramework</code>&#x6216;<code>PHP</code>&#x672C;&#x8EAB;&#x3002;<code>.</code>&#x5339;&#x914D;&#x4EFB;&#x4F55;&#x5B57;&#x7B26;&#xFF0C;<code>+</code>&#x7C7B;&#x4F3C;<code>*</code>&#xFF0C;&#x4F46;&#x81F3;&#x5C11;&#x8981;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#xFF0C;<code>[a-z]</code>&#x6307;&#x4E00;&#x4E2A;&#x5339;&#x914D;&#x8303;&#x56F4;&#xFF0C;&#x6240;&#x4EE5;<code>[a-zA-Z_0-9]</code>&#x5339;&#x914D;&#x5B57;&#x6BCD;&#x3001;&#x6570;&#x5B57;&#x3001;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5C06;&#x5B83;&#x5199;&#x6210;<code>\w</code>&#x3002;<code>\w+</code>&#x5339;&#x914D;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x7684;&#x5355;&#x8BCD;&#x5E8F;&#x5217;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;<code>^[a-zA-Z_]\w*$</code>&#x3002;&#x4E13;&#x7528;&#x5B57;&#x7B26;<code>^</code>&#x7684;&#x610F;&#x601D;&#x662F;&quot;&#x4EE5;...&#x5F00;&#x59CB;&quot;&#xFF0C;<code>$</code>&#x7684;&#x610F;&#x601D;&#x662F;&quot;&#x7ED3;&#x5C3E;&quot;&#x3002;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5728;&#x5BF9;&#x8F93;&#x5165;&#x8FDB;&#x884C;&#x6709;&#x6548;&#x6027;&#x9A8C;&#x8BC1;&#x65F6;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x5728;<code>PHP</code>&#x4E2D;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x51FD;&#x6570;&#x89C4;&#x5B9A;&#x8868;&#x8FBE;&#x5F0F;&#x5FC5;&#x987B;&#x88AB;&#x5305;&#x542B;&#x5728;&#x5B9A;&#x754C;&#x7B26;&#x4E2D;&#xFF0C;&#x5982;&#x4F7F;&#x7528;<code>/</code>&#x4F5C;&#x4E3A;&#x5B9A;&#x754C;&#x7B26;&#x3002;</p>
+<h3 id="preggrep"><code>preg_grep</code></h3>
+<p><code>preg_grep</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x83B7;&#x5F97;&#x4E0E;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#x7684;&#x6570;&#x7EC4;&#x5355;&#x5143;&#x3002;<code>array preg_grep(string pattern,array input)</code>,<code>pattern</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>input</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x6570;&#x7EC4;&#x3002;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;<code>preg_grep</code>&#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x4F7F;&#x7528;&#x4ECE;&#x8F93;&#x5165;&#x6570;&#x7EC4;&#x6765;&#x7684;&#x952E;&#x540D;&#x8FDB;&#x884C;&#x7D22;&#x5F15;&#x3002;</p>
+<h3 id="pregmatchall"><code>preg_match_all</code></h3>
+<p><code>preg_match_all</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x5168;&#x5C40;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x5339;&#x914D;&#xFF0C;<code>int preg_match_all(string pattern,string input,array matches)</code>&#x3002;<code>pattern</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>input</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;,<code>matches</code>&#x662F;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h3 id="pregmatch"><code>preg_match</code></h3>
+<p><code>preg_match</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5339;&#x914D;&#x3002;&#x4E0E;<code>preg_match_all</code>&#x51FD;&#x6570;&#x4E0D;&#x540C;&#xFF0C;<code>preg_match</code>&#x51FD;&#x6570;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x5339;&#x914D;&#x540E;&#x5C06;&#x505C;&#x6B62;&#x641C;&#x7D22;&#x3002;<code>int preg_match(string pattern,string input,array matches)</code>&#x3002;<code>pattern</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>input</code>&#x662F;&#x7528;&#x6765;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;,<code>matches</code>&#x662F;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x7684;&#x6570;&#x7EC4;&#x3002;</p>
+<h3 id="pregquote"><code>preg_quote</code></h3>
+<p><code>preg_quote</code>&#x51FD;&#x6570;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x7684;&#x8F6C;&#x4E49;&#x3002;<code>preg_quote</code>&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x6240;&#x6709;&#x5177;&#x6709;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x610F;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#x8FDB;&#x884C;&#x8F6C;&#x4E49;&#x3002;&#x5728;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x7528;&#x52A8;&#x6001;&#x751F;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6765;&#x4F5C;&#x4E3A;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x8FDB;&#x884C;&#x6A21;&#x5F0F;&#x5339;&#x914D;&#xFF0C;&#x5219;&#x53EF;&#x4EE5;&#x7528;&#x6B64;&#x51FD;&#x6570;&#x8F6C;&#x4E49;&#x5176;&#x4E2D;&#x53EF;&#x80FD;&#x5305;&#x542B;&#x7684;&#x4E00;&#x4E9B;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x3002;&#x8FD9;&#x4E9B;&#x7279;&#x6B8A;&#x5B57;&#x7B26;&#x5305;&#x62EC;&#xFF1A;<code>.</code>,&apos;\&apos;,&apos;+&apos;,&apos;*&apos;,&apos;?&apos;,&apos;[]&apos;,&apos;^&apos;,&apos;$&apos;,&apos;()&apos;,&apos;{}&apos;,&apos;=&apos;,&apos;!&apos;,&apos;&lt;&gt;&apos;,&apos;|&apos;,&apos;:&apos;&#x7B49;&#x3002; <code>string preg_quote(string str[, string delimiter])</code>&#x3002;&#x8FD9;&#x91CC;&#x53C2;&#x6570;<code>str</code>&#x662F;&#x7528;&#x6765;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x4E49;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>delimiter</code>&#x662F;&#x5176;&#x4ED6;&#x9700;&#x8981;&#x8F6C;&#x4E49;&#x7684;&#x5B57;&#x7B26;&#x3002;</p>
+<h3 id="pregreplace"><code>preg_replace</code></h3>
+<p><code>preg_replace</code>&#x4E0E;&#x524D;&#x9762;&#x7684;<code>preg_match</code>&#x51FD;&#x6570;&#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x63D0;&#x4F9B;&#x4E86;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x66FF;&#x6362;&#x529F;&#x80FD;&#xFF0C;<code>preg_replace(pattern,replacement,subject [,int limit])</code>&#xFF0C;&#x53C2;&#x6570;<code>pattern</code>&#x662F;&#x8FDB;&#x884C;&#x5339;&#x914D;&#x7684;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>replacement</code>&#x662F;&#x8981;&#x5C06;&#x5339;&#x914D;&#x90E8;&#x5206;&#x66FF;&#x6362;&#x6210;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6216;&#x8005;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;<code>subject</code>&#x662F;&#x8981;&#x88AB;&#x5339;&#x914D;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;<code>limit</code>&#x662F;&#x8981;&#x8FDB;&#x884C;&#x7684;&#x5339;&#x914D;&#x6B21;&#x6570;&#x3002;</p>
+<h3 id="pregreplacecallback"><code>preg_replace_callback</code></h3>
+<p><code>preg_replace_callback</code>&#x7684;&#x7528;&#x6CD5;&#x51E0;&#x4E4E;&#x548C;<code>preg_replace</code>&#x51FD;&#x6570;&#x4E00;&#x6837;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x4F7F;&#x7528;<code>preg_replace_callback</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x6BD4;<code>preg_replace</code>&#x66F4;&#x5B8C;&#x5584;&#x7684;&#x66FF;&#x6362;&#x529F;&#x80FD;&#x3002;<code>preg_replace</code>&#x7684;&#x66FF;&#x6362;&#x53EA;&#x662F;&#x57FA;&#x672C;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x95F4;&#x7684;&#x8BA1;&#x7B97;&#xFF0C;&#x800C;<code>preg_replace_callback</code>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x5C06;&#x8981;&#x66FF;&#x6362;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x4F20;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x4E2D;&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x5C06;&#x5904;&#x7406;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x8FDB;&#x884C;&#x66FF;&#x6362;&#x3002;<code>preg_replace_callback(pattern,callback,subject [,int limit])</code> &#x3002;&#x53C2;&#x6570;<code>callback</code>&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x3002;</p>
+<h3 id="pregsplit"><code>preg_split</code></h3>
+<p><code>preg_split</code>&#x63D0;&#x4F9B;&#x4E86;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5206;&#x5272;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x529F;&#x80FD;&#xFF0C;<code>array preg_split(string pattern,string subject [, int limit])</code></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="file.html" class="navigation navigation-prev " aria-label="Previous page: 文件系统">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="array.html" class="navigation navigation-next " aria-label="Next page: 数组">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"字符串处理","level":"1.9","depth":1,"next":{"title":"数组","level":"1.10","depth":1,"path":"array.md","ref":"array.md","articles":[]},"previous":{"title":"文件系统","level":"1.8","depth":1,"path":"file.md","ref":"file.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PHP学习笔记","language":"zh-hans","gitbook":"*","description":"PHP学习笔记"},"file":{"path":"string.md","mtime":"2019-04-07T11:18:39.945Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-07T11:19:31.802Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
